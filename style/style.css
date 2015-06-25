@@ -1,0 +1,64 @@
+body {
+    background: url("img/background.png") fixed;
+    color: #adadad;
+}
+
+.container {
+    color: #adadad;
+}
+.topic {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.sidebar {
+    background-color: rgba(103, 103, 103, 0.3);
+    border-radius: 10px;
+}
+
+.sidebar-text {
+    margin-left: 20px;
+}
+
+.panel-footer {
+    background-color: transparent;
+    border: transparent;
+    font-size: 11px;
+}
+
+.panel-footer a:link {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.panel-footer a:visited {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.panel-footer a:active {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.panel-footer a:hover {
+    text-decoration: none;
+    color: #adadad;
+}
+
+.panel-footer a {
+    color: #adadad;
+}
+
+a {
+    color: #adadad;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #646464;
+    color: #000000;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #000000;
+}
