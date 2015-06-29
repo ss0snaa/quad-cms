@@ -9,7 +9,7 @@
 <br><br>
 <ul class="nav nav-pills nav-stacked">
     <?php
-    if ($_SESSION['logged'] === '1') echo '<li class="sidebar"><a href="/im/"><i class="fa fa-envelope"></i>&nbsp; Сообщения<span class="badge pull-right">' . $data['unread'] . '</span></a></li> ';
+    if ($_SESSION['logged'] === '1') echo '<li class="sidebar"><a href="/im/"><i class="fa fa-envelope"></i>&nbsp; Сообщения<span id="message" class="badge pull-right"></span></a></li> ';
     if ($_SESSION['logged'] === '1') echo '<li class="sidebar"><a href="/news/"><i class="fa fa-newspaper-o"></i>&nbsp; Новости<span class="badge pull-right">28</span></a></li> ';
     if ($_SESSION['logged'] === '1') echo '<li class="sidebar"><a href="/friends/"><i class="fa fa-users"></i>&nbsp; Друзья<span class="badge pull-right">28</span><span class="badge pull-right alert-success">12</span> </a></li> ';
     if ($_SESSION['logged'] != '1') echo '<li class="sidebar"><a href="/news/"><i class="fa fa-newspaper-o"></i>&nbsp; Новости</a></li>';
@@ -17,3 +17,10 @@
     echo '<li class="sidebar"><a href="/media/video/"><i class="fa fa-youtube-play"></i>&nbsp; Видео</a></li>';
     ?>
 </ul>
+
+<?php
+$start = microtime(true);
+$sum = 0;
+for ($i = 0; $i < 100000; $i++) $sum += $i;
+echo "Время выполнения скрипта: ".(microtime(true) - $start);
+?>

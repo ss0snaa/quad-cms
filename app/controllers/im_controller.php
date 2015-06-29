@@ -17,7 +17,8 @@ class im_Controller extends Controller
     public function index_action()
     {
         $title = 'Личные сообщения. ' . SITENAME;
-//        $data['unread'] = $this->model->get_unread();
+
+
 
         $this->view->render('im_all_view', 'default', $data = null, $title);
     }

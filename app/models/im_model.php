@@ -11,10 +11,5 @@ class im_Model extends Model
     // проверяем непрочитанные сообщения
     public function get_unread()
     {
-        $this->dbConnect();
-        $query = "SELECT unread FROM quad_im WHERE (to_id = '" . $_SESSION['id'] . "' AND unread = '1')";
-        $result = mysql_query($query);
-        $data = mysql_num_rows($result);
-        return $data;
     }
 }

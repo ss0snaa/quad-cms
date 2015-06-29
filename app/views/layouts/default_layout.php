@@ -20,6 +20,12 @@
     <link href="../../../app/core/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="../../../app/core/libs/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="../../../style/style.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../app/core/libs/jquery/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../app/core/libs/bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body role="application">
 
@@ -72,7 +78,7 @@
 </div>
 <!-- navbar end -->
 <br><br><br>
-<div class="container-fluid" style="margin-top: 0%">
+<div class="container-fluid">
     <div class="row">
         <div class="col-lg-2">
             <?php require_once VIEW_PATH . 'left_sidebar.php'; ?>
@@ -88,8 +94,6 @@
 
 
 </body>
-<?= $this->controller[1]; ?>
-
 <!-- footer-->
 <div class="container">
     <div class="panel-footer">
@@ -99,9 +103,7 @@
 </div>
 <!-- footer end -->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../../../app/core/libs/jquery/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../../../app/core/libs/bootstrap/js/bootstrap.js"></script>
+
+<script src="../../../js/scripts.js"></script>
 </body>
 </html>
